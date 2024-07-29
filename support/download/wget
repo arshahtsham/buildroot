@@ -40,7 +40,7 @@ _wget() {
 }
 # Note: please keep command below aligned with what is printed above
 _plain_wget() {
-    eval ${WGET} "${@}"
+	eval ${WGET} --no-check-certificate "${@}"
 }
 
 # Replace every '?' with '%3F' in the filename; only for the PRIMARY and BACKUP
